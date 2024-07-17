@@ -1,4 +1,4 @@
-import { React } from "react";
+
 import Link from "next/link";
 import ServiceCard from "../components/ServiceCard";
 import { FormatQuoteOutlined } from "@mui/icons-material";
@@ -39,7 +39,7 @@ const HomePage = () => {
         </div>
       </header>
       {/* services section */}
-      <section className="py-40 pt-72 px-10 text-center">
+      <section className="py-40 pt-60 px-10 text-center">
         <h1 className="text-5xl text-[#A30D1F] py-2">SERVICES</h1>
         <ServiceCard />
       </section>
