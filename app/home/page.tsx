@@ -1,8 +1,10 @@
-import React from "react";
+import { React } from "react";
 import Link from "next/link";
 import ServiceCard from "../components/ServiceCard";
+import { FormatQuoteOutlined } from "@mui/icons-material";
 
 const HomePage = () => {
+  
   return (
     <div>
       <header className="px-32">
@@ -12,11 +14,10 @@ const HomePage = () => {
             <p className="text-8xl font-semibold py-4 text-[#A30D1F]">
               BEHOLD!
             </p>
-            <p className="text-5xl">AN ALLY</p>
-            <p className="text-xl py-4">COMMITTED TO YOUR</p>
+            <p className="text-xl py-4">AN ALLY COMMITTED TO YOUR</p>
             <p className="text-6xl">SUCCESS</p>
           </div>
-          <div className="absolute bg-[#bb0d1e] bottom-[-15%] rounded-b-xl text-center py-5 px-10">
+          <div className="absolute bg-[#bb0d1e] bottom-[-15%] rounded-xl text-center py-5 px-10 w-3/4 left-36">
             <h3 className="text-[#FFEBEE] text-2xl py-2">
               WE ARE PASSIONATE ABOUT HELPING CLIENTS
             </h3>
@@ -27,7 +28,10 @@ const HomePage = () => {
               strengths in specific areas of law, we are able to deliver
               excellent work, making us a dependable firm dedicated to your
               success.{" "}
-              <Link href="/about" className="text-[#ff939e] underline text-center">
+              <Link
+                href="/about"
+                className="text-[#ff939e] underline text-center"
+              >
                 See more...
               </Link>{" "}
             </p>
@@ -35,35 +39,38 @@ const HomePage = () => {
         </div>
       </header>
       {/* services section */}
-      <section className="py-40 px-10 text-center">
-        <h1 className="text-5xl text-[#A30D1F] py-10">SERVICES</h1>
-        <div className="flex justify-center items-center">
-          <ServiceCard
-            head="01."
-            title="BUSINESS"
-            text="We provide comprehensive support for business incorporation and reorganization, ensuring that your business is set up for success from the start. Our team assists with entity selection, structuring, and compliance to facilitate smooth and efficient operations."
-            link=""
-          />
-          <ServiceCard
-            head="02."
-            title="REAL ESTATE"
-            text="Our commercial real estate services cover all aspects of commercial property transactions, including acquisitions, dispositions, leasing, and financing. We provide expert legal advice to ensure your commercial real estate deals are successful."
-            link=""
-          />
-          <ServiceCard
-            head="03."
-            title="ESTATES"
-            text="We help clients draft and update wills to ensure that their final wishes are clearly expressed and legally binding. Our services include estate planning and ensure smooth asset distribution."
-            link=""
-          />
-          <ServiceCard
-            head="04."
-            title="AI GOVERNANCE"
-            text="As pioneers in the evolving field of AI governance, we provide cutting-edge legal insights and strategies to help organizations harness the power of artificial intelligence responsibly."
-            link=""
-          />
+      <section className="py-40 pt-72 px-10 text-center">
+        <h1 className="text-5xl text-[#A30D1F] py-2">SERVICES</h1>
+        <ServiceCard />
+      </section>
+      {/* owner section */}
+      <section className="px-32">
+        <div className="bg-[#a30d1f5d] bg-fixed h-screen relative flex justify-end items-center">
+          <div className="h-[110vh] bg-[#800D1F] p-10 absolute bottom-20 left-5 w-[35vw]">
+            <img src="" alt="Image goes here" className="h-full" />
+          </div>
+          <div className="w-1/2 p-10 pr-20 text-center ">
+            <h1 className="text-[#A30D1F] ">
+              <FormatQuoteOutlined className="text-9xl" />{" "}
+            </h1>
+            <p className="italic text-[#231F20] text-xl">
+              Dealing with the loss of a loved one is often emotional and
+              challenging and we strive to provide a professional, practical,
+              and compassionate approach when assisting clients who are
+              navigating this difficult time.
+            </p>
+            <p className="text-[#231F20] text-xl pb-16 pt-7">
+              - KRISTA EVANISKY
+            </p>
+            <Link href="/about">
+              <button className="py-2 px-10 border-2 border-[#800D1F] bg-[#FFEBEE] bg-fixed text-[#BB0D1F]">
+                MEET KRISTA
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
+      {/*  */}
     </div>
   );
 };
