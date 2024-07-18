@@ -105,11 +105,11 @@ const page = () => {
             </tr>
             <tr>
               <td className="py-2 px-1"></td>
-              <td className="py-2 px-1 text-lg ">
-                <Link href="" className="font-bold">
+              <td className="py-2 px-1  ">
+                <Link href="" className="text-lg font-bold">
                   in
                 </Link>
-                <Link href="" className="px-4 font-bold">
+                <Link href="" className="px-4 text-lg font-bold">
                   f
                 </Link>
               </td>

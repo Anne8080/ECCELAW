@@ -14,7 +14,8 @@ const Footer = () => {
           </li>
           <li className="py-2 text-sm">
             <p>
-              3502 Taylor Street E <br /> Suite 202 <br /> Saskatoon, SK <br /> S7H 5H9
+              3502 Taylor Street E <br /> Suite 202 <br /> Saskatoon, SK <br />{" "}
+              S7H 5H9
             </p>
           </li>
           <li className="py-2 text-sm">
@@ -44,8 +45,10 @@ const Footer = () => {
             <Link href="/contact">CONTACT US</Link>
           </li>
           <li>
-            <Link href="">in</Link>
-            <Link href="" className="px-4">
+            <Link href="" className="text-lg font-bold">
+              in
+            </Link>
+            <Link href="" className="px-4 text-lg font-bold">
               f
             </Link>
           </li>
