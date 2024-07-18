@@ -2,19 +2,23 @@ import Link from "next/link";
 import ServiceCard from "../components/ServiceCard";
 import { FormatQuoteOutlined } from "@mui/icons-material";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
     <div>
+      {/* navbar */}
       <Navbar/>
+
+      {/* header */}
       <header className="px-32 pt-28 ">
         <div className="bg-[#a30d1f5d] bg-fixed h-screen relative">
           <div className="text-center flex items-center flex-col pt-10 py-5">
-            <img src="./eccelogo.png" alt="ECCE" className="h-48 w-40" />
+            <img src="./eccelogo.png" alt="ECCE" className="h-28 w-24" />
             <p className="text-8xl font-semibold py-4 text-[#A30D1F]">
               BEHOLD!
             </p>
-            <p className="text-xl pb-4">AN ALLY COMMITTED TO YOUR</p>
+            <p className="text-lg pb-4">AN ALLY COMMITTED TO YOUR</p>
             <p className="text-6xl">SUCCESS</p>
           </div>
           <div className="absolute bg-[#bb0d1e] bottom-[-15%] rounded-xl text-center py-5 px-10 w-3/4 left-36">
@@ -38,11 +42,13 @@ const HomePage = () => {
           </div>
         </div>
       </header>
+
       {/* services section */}
-      <section className="py-40 pt-60 px-10 text-center">
-        <h1 className="text-5xl text-[#A30D1F] py-2">SERVICES</h1>
+      <section className="py-40 pt-52 px-10 text-center" id="services">
+        <h1 className="text-5xl text-[#A30D1F] py-2" >SERVICES</h1>
         <ServiceCard />
       </section>
+
       {/* owner section */}
       <section className="px-32">
         <div className="bg-[#a30d1f5d] bg-fixed h-screen relative flex justify-end items-center">
@@ -70,6 +76,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
       {/* contact us */}
       <section className="px-32">
         <div className="text-center py-32 px-52 items-center flex flex-col">
@@ -85,13 +92,16 @@ const HomePage = () => {
             I'LL ASSESS YOUR SITUATION AND GIVE PROPER ADVICE SO YOU CAN LEAVE A
             CLEAR AND STRAIGHTFORWARD WILL FOR YOUR LOVED ONES.
           </p>
-          <Link href="">
+          <Link href="/contact">
             <button className="py-2 px-10 border-2 border-[#800D1F] bg-[#800D1F] bg-fixed text-[#FFEBEE]">
               CONTACT US TO LEARN MORE
             </button>
           </Link>
         </div>
       </section>
+      {/* testimonials carousel */}
+      {/* footer */}
+      <Footer/>
     </div>
   );
 };
