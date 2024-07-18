@@ -22,7 +22,7 @@ const page = () => {
         </p>
         <div className="flex justify-center p-5">
           <form action=""></form>
-          <table>
+          {/* <table>
             <tr>
               <td>
                 <p>icon</p>
@@ -63,7 +63,7 @@ const page = () => {
                 </Link>
               </td>
             </tr>
-          </table>
+          </table> */}
         </div>
       </section>
 
