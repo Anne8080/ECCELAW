@@ -90,7 +90,7 @@ const HomePage = () => {
             </h1>
           </Link>
           <p className=" py-5 text-xl">
-            I'LL ASSESS YOUR SITUATION AND GIVE PROPER ADVICE SO YOU CAN LEAVE A
+            I WILL ASSESS YOUR SITUATION AND GIVE PROPER ADVICE SO YOU CAN LEAVE A
             CLEAR AND STRAIGHTFORWARD WILL FOR YOUR LOVED ONES.
           </p>
           <Link href="/contact">

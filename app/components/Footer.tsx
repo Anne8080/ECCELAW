@@ -52,9 +52,8 @@ const Footer = () => {
         </ul>
       </div>
       <p className="text-[#ffebeea9] pl-32 pt-10 pb-5">
-        <Link href=""> 2023 by Grey Street Studios</Link>
+        <Link href="">© 2023 by Grey Street Studios</Link>
       </p>
-      {/* © */}
     </div>
   );
 };
