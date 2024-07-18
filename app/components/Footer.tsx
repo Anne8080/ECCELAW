@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -5,7 +6,7 @@ const Footer = () => {
     <div className="bg-[#800D1F] text-[#FFEBEE] px-20 py-5">
       <div className="flex justify-between pb-5 pl-32 pr-44">
         <Link href="/home" className=" pl-32">
-          <img src="./vertical.png" alt="ECCELOGO" className="h-48 w-40" />
+          <Image src="./vertical.png" alt="ECCELOGO" className="h-48 w-40" />
         </Link>
         <ul className="px-16">
           <li className="py-2 text-lg ">
@@ -51,8 +52,9 @@ const Footer = () => {
         </ul>
       </div>
       <p className="text-[#ffebeea9] pl-32 pt-10 pb-5">
-        <Link href="">© 2023 by Grey Street Studios</Link>
+        <Link href=""> 2023 by Grey Street Studios</Link>
       </p>
+      {/* © */}
     </div>
   );
 };

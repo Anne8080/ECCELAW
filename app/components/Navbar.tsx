@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
 
       <div className="flex justify-between items-center ">
         <Link href="/home">
-          <img src="./horizontal.png" alt="ECCELOGO" className="h-16 w-30" />
+          <Image src="./horizontal.png" alt="ECCELOGO" className="h-16 w-30" />
         </Link>
         <ul className="text-[#231F20] flex justify-around ">
           <li className="px-3 hover:text-[#231f20c4] text-lg">
