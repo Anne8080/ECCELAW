@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="bg-[#800D1F] text-[#FFEBEE] px-20 py-5">
       <div className="flex justify-between pb-5 pl-32 pr-44">
         <Link href="/home" className=" pl-32">
-          <Image src="./vertical.png" alt="ECCELOGO" className="h-48 w-40" />
+          <img src="./vertical.png" alt="ECCELOGO" className="h-48 w-40" />
         </Link>
         <ul className="px-16">
           <li className="py-2 text-lg ">

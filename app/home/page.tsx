@@ -15,7 +15,7 @@ const HomePage = () => {
       <header className="px-32 pt-28 ">
         <div className="bg-[#a30d1f5d] bg-fixed h-screen relative">
           <div className="text-center flex items-center flex-col pt-10 py-5">
-            <Image src="./eccelogo.png" alt="ECCE" className="h-28 w-24" />
+            <img src="./eccelogo.png" alt="ECCE" className="h-28 w-24" />
             <p className="text-8xl font-semibold py-4 text-[#A30D1F]">
               BEHOLD!
             </p>
@@ -54,7 +54,7 @@ const HomePage = () => {
       <section className="px-32">
         <div className="bg-[#a30d1f5d] bg-fixed h-screen relative flex justify-end items-center">
           <div className="h-[110vh] bg-[#800D1F] p-10 absolute bottom-20 left-5 w-[35vw]">
-            <Image src="" alt="Image goes here" className="h-full" />
+            <img src="" alt="image goes here" className="h-full" />
           </div>
           <div className="w-1/2 p-10 pr-20 text-center ">
             <h1 className="text-[#A30D1F] ">
@@ -82,7 +82,7 @@ const HomePage = () => {
       <section className="px-32">
         <div className="text-center py-32 px-52 items-center flex flex-col">
           <Link href="">
-            <Image src="./eccelogo.png" alt="Logo" className="h-50 w-40" />
+            <img src="./eccelogo.png" alt="Logo" className="h-50 w-40" />
           </Link>
           <Link href="">
             <h1 className="text-[#800D1F] text-5xl pt-14 px-14">
