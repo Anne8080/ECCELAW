@@ -18,7 +18,7 @@ const page = () => {
           <br /> Please allow up to two business days for a response. If you
           would like to be in contact with us sooner, please call reception
           during office hours. <br /> <br /> Be sure to check your JUNK MAIL
-          folder as every now and then our emails get filtered incorrectly.{" "}
+          folder as every now and then our emails get filtered incorrectly.
         </p>
         <div className="flex justify-center p-5">
           <form action=""></form>

@@ -31,13 +31,13 @@ const HomePage = () => {
               providing you with high quality legal services. By focusing on our
               strengths in specific areas of law, we are able to deliver
               excellent work, making us a dependable firm dedicated to your
-              success.{" "}
+              success.
               <Link
                 href="/about"
                 className="text-[#ff939e] underline text-center"
               >
                 See more...
-              </Link>{" "}
+              </Link>
             </p>
           </div>
         </div>
@@ -57,7 +57,7 @@ const HomePage = () => {
           </div>
           <div className="w-1/2 p-10 pr-20 text-center ">
             <h1 className="text-[#A30D1F] ">
-              <FormatQuoteOutlined className="text-9xl" />{" "}
+              <FormatQuoteOutlined className="text-9xl" />
             </h1>
             <p className="italic text-[#231F20] text-xl">
               Dealing with the loss of a loved one is often emotional and
