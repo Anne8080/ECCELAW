@@ -24,3 +24,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.inputs::placeholder{
+  color: #FFEBEE;
+}

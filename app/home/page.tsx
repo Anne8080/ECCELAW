@@ -52,11 +52,9 @@ const HomePage = () => {
 
       {/* owner section */}
       <section className="px-32">
-        <div className="bg-[#a30d1f5d] bg-fixed h-screen relative flex justify-end items-center">
-          <div className="h-[110vh] bg-[#800D1F] p-10 absolute bottom-20 left-5 w-[35vw]">
-            <img src="" alt="image goes here" className="h-full" />
-          </div>
-          <div className="w-1/2 p-10 pr-20 text-center ">
+        <div className="bg-[#a30d1f5d] bg-fixed h-screen relative flex justify-start items-center">
+          
+          <div className="w-1/2 p-10 pl-20 text-center ">
             <h1 className="text-[#A30D1F] ">
               <FormatQuoteOutlined className="text-9xl" />
             </h1>
@@ -67,13 +65,16 @@ const HomePage = () => {
               navigating this difficult time.
             </p>
             <p className="text-[#231F20] text-xl pb-16 pt-7">
-              - KRISTA EVANISKY
+              - KEMI TOSIN
             </p>
             <Link href="/about">
-              <button className="py-2 px-10 border-2 border-[#800D1F] bg-[#FFEBEE] bg-fixed text-[#BB0D1F]">
-                MEET KRISTA
+              <button className="py-2 px-10 border-2 border-[#800D1F] bg-[#FFEBEE] bg-fixed text-[#BB0D1F] hover:bg-[#800d1f] hover:text-[#ffebee]">
+                MEET KEMI
               </button>
             </Link>
+          </div>
+          <div className="h-[110vh] bg-[#800D1F] p-10 absolute bottom-20 right-5 w-[35vw]">
+            <img src="" alt="image goes here" className="h-full" />
           </div>
         </div>
       </section>
@@ -82,7 +83,7 @@ const HomePage = () => {
       <section className="px-32">
         <div className="text-center py-32 px-52 items-center flex flex-col">
           <Link href="">
-            <img src="./eccelogo.png" alt="Logo" className="h-50 w-40" />
+            <img src="./eccelogo.png" alt="Logo" className="h-28 w-24" />
           </Link>
           <Link href="">
             <h1 className="text-[#800D1F] text-5xl pt-14 px-14">
