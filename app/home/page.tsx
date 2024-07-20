@@ -7,12 +7,12 @@ import ContactCard from "../components/ContactCard";
 
 const HomePage = () => {
   return (
-    <div className="bg-gradient-to-b from-darkgray from-10% via-lightgray via-50% to-lightgray">
+    <div className="bg-lightgray">
       {/* navbar */}
       <Navbar />
 
       {/* main */}
-      <main className="">
+      <main className="bg-darkgray">
         {/* replace with image */}
           <div className="text-center justify-center flex items-center pt-52 pb-32 h-screen px-20">
             <div className="w-1/2 pl-10">
@@ -26,7 +26,11 @@ const HomePage = () => {
               <img src="./eccelogo.png" alt="ECCE" className="h-80 w-72" />
             </div>
         </div>
-        {/* about section */}
+        
+      </main>
+
+      
+{/* about section */}
       <section className="px-32 py-20 ">
         <div className=" bg-darkred rounded-xl text-center py-5 px-10 ">
           <h3 className="text-white text-2xl py-2">
@@ -49,13 +53,9 @@ const HomePage = () => {
       </section>
       {/* services section */}
       <section className="py-40 pt-10 px-10 text-center" id="services">
-        <h1 className="text-5xl text-white py-2">SERVICES</h1>
+        <h1 className="text-5xl text-darkred py-2">SERVICES</h1>
         <ServiceCard />
       </section>
-      </main>
-
-      
-
       
 
       {/* owner section */}
