@@ -3,60 +3,28 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[#800D1F] text-[#FFEBEE] px-20 py-5">
-      <div className="flex justify-between pb-5 pl-32 pr-44">
-        <Link href="/home" className=" pl-32">
-          <img src="./vertical.png" alt="ECCELOGO" className="h-48 w-40" />
-        </Link>
-        <ul className="px-16">
-          <li className="py-2 text-lg ">
-            <Link href="/contact">CONTACT US</Link>
-          </li>
-          <li className="py-2 text-sm">
-            <p>
-              3502 Taylor Street E <br /> Suite 202 <br /> Saskatoon, SK <br />{" "}
-              S7H 5H9
-            </p>
-          </li>
-          <li className="py-2 text-sm">
-            <Link href="">email</Link>
-          </li>
-          <li className="py-2 text-sm">
-            <p>Phone: 1-306-986-5333</p>
-          </li>
-          <li className="py-2 text-sm">
-            <p>Fax: 1-844-850-5878</p>
-          </li>
-        </ul>
-        <ul>
-          <li className="py-2 text-lg">
-            <p>NAVIGATE</p>
-          </li>
-          <li className="py-2 text-sm">
-            <Link href="/about">ABOUT US</Link>
-          </li>
-          <li className="py-2 text-sm">
-            <Link href="/home#services">OUR SERVICES</Link>
-          </li>
-          <li className="py-2 text-sm">
-            <Link href="">COMMON QUESTIONS</Link>
-          </li>
-          <li className="py-2 text-sm">
-            <Link href="/contact">CONTACT US</Link>
-          </li>
-          <li>
-            <Link href="" className="text-lg font-bold">
+    <div className="bg-darkred text-white px-10 py-2">
+      <div className="flex justify-between p-5 items-center">
+        <div className="flex gap-4 items-center text-base">
+          <Link href="/home" className="">
+            <img src="./horizontal.png" alt="ECCELOGO" className="h-16 w-32" />
+          </Link>
+          <Link className="hover:text-linkhover" href="/about">ABOUT US</Link>
+          <Link className="hover:text-linkhover" href="/home#services">OUR SERVICES</Link>
+          <Link className="hover:text-linkhover" href="">COMMON QUESTIONS</Link>
+        </div>
+        <div className="flex gap-2 text-[#ffebeea9] items-center">
+          <Link href="http://net-trix.ca" target="_blank" className="hover:text-white">
+            &copy;{new Date().getFullYear()} by Net Trix Solutions
+          </Link>
+          <Link href="" className="text-lg font-bold hover:text-white">
               in
             </Link>
-            <Link href="" className="px-4 text-lg font-bold">
+            <Link href="" className="text-lg font-bold hover:text-white">
               f
             </Link>
-          </li>
-        </ul>
+        </div>
       </div>
-      <p className="text-[#ffebeea9] pl-32 pt-10 pb-5">
-        <Link href="">© 2024 by Net Trix Solutions</Link>
-      </p>
     </div>
   );
 };

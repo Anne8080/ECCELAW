@@ -5,7 +5,7 @@ import '@fontsource/roboto/700.css';
 import HomePage from './home/page';
 export default function Home() {
   return (
-    <main>
+    <main >
       <HomePage/>
     </main>
   );

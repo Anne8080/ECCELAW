@@ -6,16 +6,17 @@ import ContactCard from "../components/ContactCard";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="bg-lightgray">
       {/* navbar */}
       <Navbar />
 
       {/* header */}
       <header className="px-20 pt-28 ">
+        {/* replace with image */}
         <div className="bg-[#a30d1f5d] bg-fixed h-[185vh] relative">
-          <div className="text-center flex items-center flex-col pt-10 py-5 bg-[#800D1F]">
+          <div className="text-center flex items-center flex-col pt-10 py-5 bg-darkred">
             <img src="./vertical.png" alt="ECCE" className="h-52 w-44 mb-10" />
-            <p className="text-sm py-7 px-60 text-[#FFEBEE]">
+            <p className="text-sm py-7 px-60 text-white">
               Our professional, practical, and caring approach to interacting
               with clients is what sets us apart. We know that most people
               don&apos;t deal with legal matters every day, but we do. We also
@@ -26,7 +27,7 @@ const AboutPage = () => {
               with high-quality work.
             </p>
           </div>
-          <div className="bg-[#800D1F] text-center text-[#FFEBEE] pt-28 pb-40 px-20 w-[50vw] absolute right-8 bottom-[-15vh]">
+          <div className="bg-darkred text-center text-white pt-28 pb-40 px-20 w-[50vw] absolute right-8 bottom-[-15vh]">
             <p className="text-2xl">WE ARE</p>
             <h1 className="text-5xl font-bold py-2">PASSIONATE</h1>
             <p className="text-2xl">ABOUT HELPING CLIENTS</p>
@@ -50,15 +51,15 @@ const AboutPage = () => {
               <li className="">
                 <Link
                   href="/home#services"
-                  className="py-3 px-16 border-2 border-[#FFEBEE] bg-[#FFEBEE] bg-fixed text-[#BB0D1F] hover:bg-transparent hover:text-[#ffebee]"
+                  className="py-3 px-16 border-2 border-white bg-white bg-fixed text-lightred hover:bg-transparent hover:text-white"
                 >
                   Our Services
                 </Link>
               </li>
               <li className="">
                 <Link
-                  href="/home#services"
-                  className="py-3 px-16 border-2 border-[#FFEBEE] bg-transparent bg-fixed text-[#FFEBEE] hover:bg-[#FFEBEE]  hover:text-[#BB0D1F]"
+                  href="/contact"
+                  className="py-3 px-16 border-2 border-white bg-transparent bg-fixed text-white hover:bg-white  hover:text-lightred"
                 >
                   Contact Us
                 </Link>
@@ -70,6 +71,7 @@ const AboutPage = () => {
       <section className="px-20 pt-40 pb-56 ">
         <div className="flex justify-center items-end">
           <div className="">
+            {/* insert image */}
             <img src="" alt="image goes here" className="" />
           </div>
           <div className="w-1/2 p-20 text-left">
@@ -92,8 +94,9 @@ const AboutPage = () => {
         </div>
       </section>
       <section className="px-20 ">
+        {/* replace with image */}
         <div className="bg-[#a30d1f5d] bg-fixed h-screen relative">
-          <div className="bg-[#800D1F] px-20 pt-28 pb-10 w-[50vw] absolute top-[-20vh] right-7 text-[#FFEBEE]">
+          <div className="bg-darkred px-20 pt-28 pb-10 w-[50vw] absolute top-[-20vh] right-7 text-white">
             <h1 className="italic text-xl">Services</h1>
             <h1 className="text-2xl py-5">ESTATE PLANNING</h1>
             <p className="text-sm pt-5">
@@ -101,12 +104,24 @@ const AboutPage = () => {
               wishes are clearly expressed and legally binding. Our services
               include estate planning and ensure smooth asset distribution.
             </p>
-            <p className="py-20"><Link
-              href="/home#services"
-              className="py-2 px-14 border-2 border-[#FFEBEE] bg-transparent bg-fixed text-[#FFEBEE] hover:bg-[#FFEBEE]  hover:text-[#BB0D1F]"
-            >
-              Learn More
-            </Link></p>
+            <ul className="flex justify-between items-center py-20">
+              <li className="">
+                <Link
+                  href="/home#services"
+                  className="py-2 px-14 border-2 border-white bg-white bg-fixed text-lightred hover:bg-transparent hover:text-white"
+                >
+                  Common Questions
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  href="/home#services"
+                  className="py-2 px-14 border-2 border-white bg-transparent bg-fixed text-white hover:bg-white  hover:text-lightred"
+                >
+                  Learn More
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

@@ -10,10 +10,10 @@ import {
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-lightgray">
       {/* navbar */}
       <Navbar />
-      <section className="bg-[#800D1F] text-[#FFEBEE] text-sm px-60 pt-32">
+      <section className="bg-darkred text-white text-sm px-60 pt-32">
         <h1 className="py-16 text-center text-5xl">CONTACT US</h1>
         <p className="text-center px-10">
           If you would like to inquire about our services or set up a meeting,
@@ -34,13 +34,13 @@ const page = () => {
                 type="text"
                 name="name"
                 placeholder="NAME"
-                className="p-2 bg-transparent border-2 border-[#feebee] focus:outline-none focus:bg-[#feebee50] hover:bg-[#feebee1c] inputs"
+                className="p-2 bg-transparent border-2 border-white focus:outline-none focus:bg-focusgray hover:bg-hovergray inputs"
               />
               {/* email inut */}
               <input
                 type="email"
                 name="email"
-                className="ml-2 p-2 bg-transparent border-2 border-[#feebee] focus:outline-none focus:bg-[#feebee50] hover:bg-[#feebee1c] inputs"
+                className="ml-2 p-2 bg-transparent border-2 border-white focus:outline-none focus:bg-focusgray hover:bg-hovergray inputs"
                 placeholder="EMAIL"
               />
             </div>
@@ -49,20 +49,20 @@ const page = () => {
               type="text"
               name="phone"
               placeholder="PHONE"
-              className="w-full p-2 my-5 bg-transparent border-2 border-[#feebee] focus:outline-none focus:bg-[#feebee50] hover:bg-[#feebee1c] inputs"
+              className="w-full p-2 my-5 bg-transparent border-2 border-white focus:outline-none focus:bg-focusgray hover:bg-hovergray inputs"
             />
             {/* message input */}
             <textarea
               name="message"
               rows={7}
               placeholder="HOW MAY WE BE OF ASSISTANCE?"
-              className="w-full p-2 bg-transparent border-2 border-[#feebee] focus:outline-none focus:bg-[#feebee50] hover:bg-[#feebee1c] resize-none inputs"
+              className="w-full p-2 bg-transparent border-2 border-white focus:outline-none focus:bg-focusgray hover:bg-hovergray resize-none inputs"
             ></textarea>
             {/* submit */}
             <input
               type="submit"
               value="SUBMIT"
-              className="py-2 w-full border-2 border-[#800D1F] bg-[#FFEBEE] bg-fixed text-[#BB0D1F] hover:bg-[#feebee50] hover:text-[#ffebee] hover:border-[#feebee] mt-5"
+              className="py-2 w-full border-2 border-darkred bg-white bg-fixed text-lightred hover:bg-focusgray hover:text-white hover:border-white mt-5"
             />
           </form>
           <table className="w-1/2 items-center">
@@ -128,6 +128,8 @@ const page = () => {
           </div>
         </div>
       </section>
+
+      {/* map */}
       <section className="bg-[#ffc9d1]">
         <br />
       </section>
