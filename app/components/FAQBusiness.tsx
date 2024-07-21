@@ -29,9 +29,9 @@ const data = [
 ];
 
 const FAQBusiness = () => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<number | null>(null);
 
-  const toggle = (i) => {
+  const toggle = (i:number) => {
     if (selected === i) {
       return setSelected(null);
     }

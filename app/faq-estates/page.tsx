@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import QuestionsHero from "../components/QuestionsHero";
-import FAQBusiness from "../components/FAQBusiness";
 import CMContact from "../components/CMContact";
 import Footer from "../components/Footer";
+import FAQEstate from "../components/FAQEstate";
 
 const FAQEstatesPage = () => {
   return (
@@ -15,7 +15,7 @@ const FAQEstatesPage = () => {
       <QuestionsHero />
 
       {/* faq */}
-      <FAQBusiness />
+      <FAQEstate />
 
       {/* contact */}
       <CMContact />

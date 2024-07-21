@@ -29,9 +29,9 @@ const data = [
 ];
 
 const FAQEstate = () => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<number | null>(null);
 
-  const toggle = (i) => {
+  const toggle = (i:number) => {
     if (selected === i) {
       return setSelected(null);
     }
@@ -42,7 +42,7 @@ const FAQEstate = () => {
       <h1 className="text-5xl pt-20 font-thin mt-5">
         FREQUENTLY ASKED QUESTIONS
       </h1>
-      <h3 className="text-2xl font-normal mt-5 text-left">BUSINESS</h3>
+      <h3 className="text-2xl font-normal mt-5 text-left">ESTATES</h3>
       {data.map((item, i) => (
         <div className="bg-gray mb-1 py-3 px-5 text-base" key={i}>
           <div
