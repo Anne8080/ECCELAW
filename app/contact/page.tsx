@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import {
   EmailOutlined,
-  FacebookOutlined,
   FmdGoodOutlined,
   PhoneOutlined,
 } from "@mui/icons-material";

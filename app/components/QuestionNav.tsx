@@ -15,20 +15,17 @@ const QuestionNav = () => {
       </Link>
       {displayBlock && (
         <ul
-          className="absolute top-16 right-0 w-52 bg-darkgray py-2 px-10 block"
+          className="absolute top-16 right-0 w-60 bg-darkgray py-2 px-10 block"
           onMouseLeave={() => setDisplayBlock(false)}
         >
           <li className="py-1 text-base hover:text-linkhover">
-            <Link href="/business">FAQ - Business</Link>
+            <Link href="/faq-business">FAQ - Business</Link>
           </li>
           <li className="py-1 text-base hover:text-linkhover">
-            <Link href="/real-estate">FAQ - Real Estate</Link>
+            <Link href="/faq-estates">FAQ - Estates</Link>
           </li>
           <li className="py-1 text-base hover:text-linkhover">
-            <Link href="/estates">FAQ - Estates</Link>
-          </li>
-          <li className="py-1 text-base hover:text-linkhover">
-            <Link href="/ai-governance">FAQ - AI Governance</Link>
+            <Link href="/faq-ai-governance">FAQ - AI Governance</Link>
           </li>
         </ul>
       )}

@@ -22,6 +22,9 @@ const config: Config = {
         'darkgray': '#262626',
         'linkhover': '#ffebeec4',
       },
+      boxShadow: {
+        'xl': ' .2px .2px 2px 2px rgba(76, 0, 130, 0.062)',
+      }
     },
     
   },
