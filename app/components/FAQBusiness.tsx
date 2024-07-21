@@ -44,7 +44,7 @@ const FAQBusiness = () => {
       </h1>
       <h3 className="text-2xl font-normal mt-5 text-left">BUSINESS</h3>
       {data.map((item, i) => (
-        <div className="bg-gray mb-1 py-3 px-5 text-base">
+        <div className="bg-gray mb-1 py-3 px-5 text-base " key={i}>
           <div
             className={
               selected === i
