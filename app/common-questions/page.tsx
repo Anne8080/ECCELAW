@@ -16,7 +16,7 @@ const QuestionsPage = () => {
             <h1 className="text-5xl py-5">COMMON QUESTIONS</h1>
             <p className="pt-5 pb-10 text-sm">
               We know that most people don&apos;t deal with legal matters every
-              day, but we do. We've compiled some commonly asked questions that
+              day, but we do. We&apos;ve compiled some commonly asked questions that
               our clients have. <br />
               <br /> The information and material on these pages and any other
               pages referenced are meant to provide general information only.
