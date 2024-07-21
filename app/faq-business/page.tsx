@@ -4,7 +4,7 @@ import QuestionsHero from "../components/QuestionsHero";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CMContact from "../components/CMContact";
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 
 const FAQBusinessPage = () => {
   return (
