@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const ServiceCard = () => {
   const [servicecards, setServiceCards] = useState([
@@ -37,20 +38,34 @@ const ServiceCard = () => {
   return (
     <div className="flex justify-center items-center py-10">
       {servicecards.map((servicecard) => (
-      <div className="w-1/4 m-3 p-10 pb-20 h-[85vh] bg-pink relative " key={servicecard.id}>
-        <h1 className="underline text-4xl text-black italic font-medium">
-          {servicecard.headtitle}
-        </h1>
-        <h3 className="text-2xl pb-5 pt-10 text-black">{servicecard.title}</h3>
-        <p className="py-7 text-black text-sm">
-          {servicecard.text}
-        </p>
-        <p className="text-lg italic text-black text-center absolute pr-20 bottom-20 w-full ">
-          <Link href={servicecard.link} className="py-2 px-5 border-2 border-darkred bg-transparent bg-fixed text-darkred hover:px-6  hover:py-3">learn more</Link>
-        </p>
-      </div>
-      
-      ) )}
+        <motion.div
+          className="w-1/4 m-3 p-10 pb-20 h-[85vh] bg-pink relative "
+          key={servicecard.id}
+          initial={{ opacity: "0" }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 0.1,
+            type: "tween",
+            delay: servicecard.id - 0.9,
+          }}
+        >
+          <h1 className="underline text-4xl text-black italic font-medium">
+            {servicecard.headtitle}
+          </h1>
+          <h3 className="text-2xl pb-5 pt-10 text-black">
+            {servicecard.title}
+          </h3>
+          <p className="py-7 text-black text-sm">{servicecard.text}</p>
+          <p className="text-lg italic text-black text-center absolute pr-20 bottom-20 w-full ">
+            <Link
+              href={servicecard.link}
+              className="py-2 px-5 border-2 border-darkred bg-transparent bg-fixed text-darkred hover:px-6  hover:py-3"
+            >
+              learn more
+            </Link>
+          </p>
+        </motion.div>
+      ))}
     </div>
   );
 };
