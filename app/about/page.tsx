@@ -1,8 +1,9 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from "../components/quicklinks/Footer";
+import Navbar from "../components/quicklinks/Navbar";
 import Link from "next/link";
 import ContactCard from "../components/ContactCard";
+import Testimonials from "../components/Testimonials";
 
 const AboutPage = () => {
   return (
@@ -69,14 +70,14 @@ const AboutPage = () => {
         </div>
       </header>
       <section className="px-20 pt-40 pb-56 ">
-        <div className="flex justify-center items-end">
-          <div className="">
+        <div className="flex justify-center items-center">
+          <div className="w-1/2">
             {/* insert image */}
-            <img src="" alt="image goes here" className="" />
+            <img src="/TrustedPartner.png" alt="image goes here" className="" />
           </div>
           <div className="w-1/2 p-20 text-left">
             <p className="italic text-xl">KEMI TOSIN</p>
-            <p className="pt-3 text-sm">TEP | Founder | Lawyer</p>
+            <p className="pt-3 text-sm">ECCE | Founder | Lawyer</p>
             <p className="pt-5 text-sm">
               Krista Evanisky is the founder of Clarity Law. She is a member of
               the Society of Trust and Estate Practitioners (STEP) and holds her
@@ -95,7 +96,7 @@ const AboutPage = () => {
       </section>
       <section className="px-20 ">
         {/* replace with image */}
-        <div className="bg-[#a30d1f5d] bg-fixed h-screen relative">
+        <div className="bg-[url('/missing-piece.png')] bg-cover bg-center bg-no-repeat bg-fixed h-screen relative">
           <div className="bg-darkred px-20 pt-28 pb-10 w-[50vw] absolute top-[-20vh] right-7 text-white">
             <h1 className="italic text-xl">Services</h1>
             <h1 className="text-2xl py-5">ESTATE PLANNING</h1>
@@ -128,6 +129,9 @@ const AboutPage = () => {
       <section className="px-20">
         <ContactCard />
       </section>
+
+      {/* testimonial */}
+      <Testimonials/>
 
       {/* footer */}
       <Footer />

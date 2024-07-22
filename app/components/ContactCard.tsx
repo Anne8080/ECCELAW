@@ -5,12 +5,10 @@ const ContactCard = () => {
   return (
     <div className="text-center py-32 px-52 items-center flex flex-col">
       <Link href="">
-        <img src="./eccelogo.png" alt="Logo" className="h-28 w-24" />
+        <img src="/eccelogo.png" alt="Logo" className="h-28 w-24" />
       </Link>
       <Link href="">
-        <h1 className="text-darkred text-5xl pt-14 px-14">
-          SUBSCRIBE HEADING
-        </h1>
+        <h1 className="text-darkred text-5xl pt-14 px-14">SUBSCRIBE HEADING</h1>
       </Link>
       <p className=" py-5 text-xl">
         I WILL ASSESS YOUR SITUATION AND GIVE PROPER ADVICE SO YOU CAN LEAVE A

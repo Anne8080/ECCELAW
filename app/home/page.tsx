@@ -1,9 +1,10 @@
 import Link from "next/link";
-import ServiceCard from "../components/ServiceCard";
+import ServiceCard from "../components/services/ServiceCard";
 import { FormatQuoteOutlined } from "@mui/icons-material";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/quicklinks/Navbar";
+import Footer from "../components/quicklinks/Footer";
 import ContactCard from "../components/ContactCard";
+import Testimonials from "../components/Testimonials";
 
 const HomePage = () => {
   return (
@@ -86,12 +87,15 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* testimonials carousel */}
+      
 
       {/* contact us */}
       <section className="px-32">
         <ContactCard />
       </section>
+
+      {/* testimonials carousel */}
+      <Testimonials/>
 
       {/* footer */}
       <Footer />

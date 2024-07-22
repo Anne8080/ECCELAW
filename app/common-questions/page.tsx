@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/quicklinks/Navbar";
+import Footer from "../components/quicklinks/Footer";
 import QuestionsHero from "../components/QuestionsHero";
 
 const QuestionsPage = () => {

@@ -5,7 +5,7 @@ const QuestionsHero = () => {
   return (
     <header className="px-20 pt-28 ">
         {/* replace with image */}
-        <div className="w-1/2 h-[50vh] bg-[#a30d1f5d] relative">
+        <div className="w-1/2 h-[50vh] bg-[url('/bgone.png')] bg-cover bg-center bg-no-repeat relative">
           <div className="bg-darkred text-white pt-16 pb-10 px-20 w-[50vw] absolute left-3/4 top-1/2">
             <h1 className="text-5xl py-5">COMMON QUESTIONS</h1>
             <p className="pt-5 pb-10 text-sm">
